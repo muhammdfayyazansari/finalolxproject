@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./signup.css">
+</head>
+
+<body>
+  <!-- <br>
+  <br>
+  <br>
+  <div class="center">
+    <form onsubmit="signup(); return false;">
+      <fieldset>
+        <legend>Signup</legend>
+        <label for="email"> Email</label> <br><input type="email" name="email" id="suEmail" placeholder="Email"><br><br>
+        <label for="suPassword"> Password </label> <br><input type="password" name="password" id="suPassword" placeholder="password"><br><br>
+        <label for="uName"> Name </label> <br><input type="text" name="uName" id="uName" placeholder="Name"><br><br>
+        <button type="submit" >SignUp</button>
+      </fieldset>
+    </form>
+  </div>
+
+ -->
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-center" style="height:100vh;">
+      <div class=" main col-11 col-sm-10 col-md-6 col-lg-4">
+        <form style="height:100% ;" onsubmit="signup(); return false;">
+          <fieldset>
+            <legend>
+              <h1 class="text-break text-center mb-4 mt-2">Create Account</h1>
+            </legend>
+            <div class="username form-group">
+              <label for="uName">Username</label>
+              <input type="text" class="form-control form-control-sm" id="uName" placeholder="Enter Username">
+            </div>
+            <div class="form-group">
+              <label for="suEmail">Email address</label>
+              <input type="email" class="form-control form-control-sm" id="suEmail" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-light">We'll never share your email with anyone
+                else.</small>
+            </div>
+            <div class="username form-group">
+              <label for="suPassword">Password</label>
+              <input type="password" class="form-control form-control-sm" id="suPassword" placeholder="Password">
+              <!-- <small id="emailHelp" class="form-text text-light">Password </small> -->
+            </div>
+            <!-- <div class="username form-group">
+              <label for="exampleInputPassword1">Confirm Password</label>
+              <input type="password" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="Confirm Password">
+            </div> -->
+            <div class="d-flex justify-content-between pt-3">
+              <a type="submit" class="btn btn-info" href="./login.html">Sign in instead</a>
+              <button type="submit" class="btn btn-primary">SIGN UP</button>
+             
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="./app.js"></script>
+</body>
+
+</html>

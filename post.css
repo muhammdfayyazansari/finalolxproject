@@ -1,0 +1,43 @@
+.postNow-btn{
+    padding: 10px 0px;
+    background-color: transparent;
+    border: #002f34 solid 2px;
+    color: #002f34;
+    border-radius: 5px;
+}
+.postNow-btn:hover{
+    background-color: #002f34;
+    border: #002f34 solid 2px;
+    color: #ffffff;
+}
+
+.back-div{
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 35px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+}
+.back-to-top{
+    display: inline-block;
+    padding: 5px 13px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 4px;
+
+
+    background-color: #22D9D0;
+    border: #22D9D0 solid 1px;
+    color: #fff;
+}
+.back-to-top:hover{
+    background-color: #002f34;
+    border: #002f34 solid 1px;
+    color: #fff;
+}

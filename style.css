@@ -1,0 +1,267 @@
+/* ************************************ OLD OLX CSS ALL *************************** */
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.navbardiv{
+    background: #F7F8F8;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    
+}
+.navbar{
+    background: #F7F8F8;
+    
+}
+.nav-icons i{
+background-color: aqua;
+padding: 10px;
+border-radius: 20px;
+margin-right: 5px;
+background-image: linear-gradient(rgb(173, 174, 174),white);
+transition: ease 0.2s;
+}
+.nav-icons i:hover, .motors:hover, .property:hover{
+font-weight: 500;
+color: blue;
+cursor: pointer;
+}
+.input-div{
+    border: 2px #002f34 solid; 
+    color: #575757;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0px 10px 0px 0px;
+    background-color: #ffffff;
+}
+.input-div-2{
+    border: 2px #002f34 solid; 
+    color: #575757;
+    border-radius: 5px;
+    width: 100%;
+}
+.input-div-2:focus-within{
+    border: lightseagreen 2px solid;
+}
+.search-icon{
+    background-color: #002f34;
+    padding: 11px 20px;
+    color: #f7f7f7;
+}
+
+.input-search{
+    border: none;
+    width: 100%;
+    padding: 11px;
+    background-color: #ffffff;
+}
+
+.input-div:focus-within {
+border: lightseagreen solid 2px !important;
+}
+.input-search:focus{
+    outline: 0px !important;
+}
+.login-link a{
+    margin: 0px 10px;
+    color: #002f34;
+    font-size: large; 
+    font-weight: bold;
+}
+.sell-btn{
+    background-color: transparent;
+    border: #002f34 solid 2px;
+    color: #002f34;
+    border-radius: 5px;
+}
+.sell-btn:hover{
+    background-color: #002f34;
+    border: #002f34 solid 2px;
+    color: #ffffff;
+}
+.plusimg{
+    position: relative;
+    left: 25%;
+}
+.headingsell{
+    display: inline-block; width: 100%;
+    position:relative;
+    top: 3px;
+    left: 10% ;
+}
+.categories-list{
+    margin: 0px;
+    padding: 10px 20px ;
+    list-style: none;
+}
+.all-categories{
+    font-size: xx-large;
+    font-weight: bold;
+    color: #002f34;
+}
+.all-categories:hover{
+    color: #002f34;
+}
+.all-categories i{
+    font-size: larger;
+}
+.categories-list li{
+    display: inline-block;
+    margin: 5px 10px;
+}
+.categories-list a{
+    color: #002f34;
+    font-size: medium;
+    text-decoration: none;
+}
+.load-more{
+    display: flex;
+    justify-content: center;
+    }
+.load-more a{
+    border: 3px solid #002f34;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: #002f34;
+}
+.load-more a:hover{
+    border: 4px solid #002f34;
+    font-weight: bolder;
+    color: #002f34;
+}
+.try-olx{
+    display: inline-block;
+    height: 90%;
+    border-right: 2px #dbdbdb solid;
+}
+.get-your-app img{
+width: 30%;
+}
+.footer{
+    background: #EBEEEF;
+}
+.footer ul{
+    padding-left: 0px;
+}
+.footer li{
+    list-style: none;
+    margin-left: 0px;
+}
+.footer a{
+text-decoration: none;
+font-size: smaller;
+color: #575757;
+transition: 0.2s;
+}
+.footer a:hover{
+    color: #002f34;
+}
+.follow-us-ul{
+    margin: 10px 0px 30px 0px;
+}
+.follow-us-ul li{
+display: inline-block;
+margin: 5px;
+}
+.follow-us-ul li a i{
+text-align: center;
+padding: 4px;
+width: 25px;
+height: 25px;
+border: 2px solid #575757;
+border-radius: 50%;
+font-size: smaller;
+}
+.get-your-app-footer img{
+width:30%;
+}
+.copyright{
+    background: #002f34;
+}
+.back-div{
+    /* position: fixed;
+    right: 45%;
+    bottom: 5px;
+    text-align: center;
+    z-index: 1; */
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 35px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+}
+.back-to-top{
+    display: inline-block;
+    padding: 5px 13px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 4px;
+
+
+    background-color: #22D9D0;
+    border: #22D9D0 solid 1px;
+    color: #fff;
+}
+.back-to-top:hover{
+    background-color: #002f34;
+    border: #002f34 solid 1px;
+    color: #fff;
+}
+
+@media screen and (min-width: 992px)and (max-width: 1020px) {
+    .findCarsMobileInput{
+        min-width: 20rem;
+    }
+}
+@media screen and (min-width: 1020px)and (max-width: 1065px) {
+    .findCarsMobileInput{
+        min-width: 21rem;
+    }
+}
+@media screen and (min-width: 1065px)and (max-width: 1095px) {
+    .findCarsMobileInput{
+        min-width: 24rem;
+    }
+}
+@media screen and (min-width: 1095px)and (max-width: 1109px) {
+    .findCarsMobileInput{
+        min-width: 25rem;
+    }
+}
+@media screen and (min-width: 1110px)and (max-width: 1139px) {
+    .findCarsMobileInput{
+        min-width: 26rem;
+    }
+}
+@media screen and (min-width: 1140px )and (max-width: 1160px) {
+    .findCarsMobileInput{
+        min-width: 33rem;
+    }
+}
+@media screen and (min-width: 1160px) {
+    .findCarsMobileInput{
+        min-width: 42rem;
+    }
+}
+
+
+
+/* ************************************END OLD OLX CSS ALL *************************** */

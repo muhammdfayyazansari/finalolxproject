@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OLX</title>
+  <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./post.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<!-- ******************************** NAVBAR START ******************************* -->
+
+<body>
+  <div class="container-fluid navbardiv">
+    <div class="row navbar px-sm-4 px-1 ">
+      <div class="col col-lg-4 col-md-4 d-flex align-items-center justify-content-between px-sm-4 nav-icons">
+        <img src="./images/olxlogos.png" alt="">
+        <span class="motors"><i class="fa fa-car" aria-hidden="true"></i> <span
+            style="font-size: smaller;">MOTORS</span> </span>
+        <span class="property"><i class="fa-solid fa-building"></i> <span style="font-size:smaller">PROPERTY</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="row px-sm-4 px-1">
+      <div
+        class="col-12 navbar navbar-expand-lg navbar-light bg-light d-flex align-items-center justify-content-between">
+        <a href="www.olx.com" class="navbar-brand"><img src="./images/olxlogos.png" alt=""></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#olxNavbar"><span
+            class="navbar-toggler-icon"></span></button>
+
+        <div class="collapse navbar-collapse " id="olxNavbar">
+          <div class="navbar-nav mr-auto">
+            <div class="nav-item py-lg-0 py-1 ">
+              <div class="d-flex align-items-center justify-content-between input-div">
+                <span style="margin:0px 10px ;"><i class="fa fa-search" aria-hidden="true"></i></span>
+                <input class="input-search " style="width: 100%;" type="text" value="Pakistan">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="nav-item py-lg-0 pb-1">
+              <div class="d-flex align-items-center justify-content-center input-div-2 m-0 ml-lg-4 ">
+                <input class="input-search findCarsMobileInput" style='width:100%'
+                  placeholder="Find Cars, Mobile Phones and more..." type="text">
+                <span class="search-icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-start" onclick="adPost(this);">
+            <!-- <button class="btn btn-outline-primary py-2 px-3">login</button> -->
+            <button class="sell-btn" style="padding: 12px 50px  ;">Sell</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ******************************** NAVBAR END ******************************* -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <div class="row">
+          <div class="col-12 py-3" style="border: #dbdbdb solid 1px; border-radius: 5px;">
+            <div id="mycarousel" class="carousel slide carousel-fade">
+              <ol class="carousel-indicators">
+                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#mycarousel" data-slide-to="1"></li>
+                <li data-target="#mycarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active" id="carosellStop">
+                  <img
+                    src="https://images.unsplash.com/photo-1661961111184-11317b40adb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MXx8bGFwdG9wfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item ">
+                  <img
+                    src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-target="#mycarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-target="#mycarousel" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </button>
+            </div>
+            <div class="d-flex justify-content-start">
+              <img
+                src="https://images.unsplash.com/photo-1661961111184-11317b40adb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MXx8bGFwdG9wfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                class="d-inline-block w-25 my-3 mr-2" alt="...">
+              <img
+                src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                class="d-inline-block w-25 my-3 mr-2" alt="...">
+              <img
+                src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                class="d-inline-block w-25 my-3 mr-2" alt="...">
+            </div>
+          </div>
+
+
+          <div class="col-12 py-3 px-2">
+            <h5>Details</h5>
+            <div class="row">
+              <div class="col-3"><small class="text-secondary">Price</small></div>
+              <div class="col-3"><small>130000</small></div>
+            </div>
+
+          </div>
+          <div class="col-12 py-3 px-2">
+            <h5>Description</h5>
+            <div class="row">
+              <div class="col-12"> <small>
+                  Chinyoti beautiful bed set including dressing table, Almari, 2 side tables and a bed. Only serious
+                  buyer
+                  contact me. The price is slightly negotiable.
+                </small></div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+
+
+
+      <!-- left div column wise *********** -->
+      <div class="col-12 col-lg-4">
+        <div class="row pl-2">
+          <div class="col-12 p-3 mb-2 " style="border: #dbdbdb solid 1px; border-radius: 5px;">
+            <h1 class="pb-0 mb-0 ml-0 pl-0">Rs 130000</h1>
+            <p class="pt-0 pl-2 mt-0 text-secondary">title</p>
+          </div>
+          <div class="col-12 p-3 mb-2 d-flex flex-column justify-content-end"
+            style="border: #dbdbdb solid 1px; border-radius: 5px;">
+            <h3 class="font-weight-light pb-0 mb-2 ml-0 pl-0">Seller Discription</h3>
+            <div class="d-flex flex-row align-content-center">
+              <img src="./images/seller.png" width="60px" alt="" srcset="">
+              <span>
+                <div class="d-flex flex-column justify-content-end"><span>Muhammad Fayyaz Ansari</span> <small>Member
+                    since 2020</small></div>
+              </span>
+            </div>
+            <p class="pt-0 m-0 pl-2 mt-0 text-secondary"><button
+                class="btn mt-2 btn-md btn-primary btn-block postNow-btn font-weight-bold">Chat with seller</button></p>
+          </div>
+          <div class="col-12 p-3 mb-2 " style="border: #dbdbdb solid 1px; border-radius: 5px;">
+            <h5 class="font-weight-bold pb-0 mb-0 ml-0 pl-0">Posted in</h5>
+            <small>Karachi</small><br>
+            <img src="./images/map.svg" width="100%" alt="" srcset="">
+            <div>
+              <p class="text-lead">SEE LOCATION</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+  <script src="./bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+  <script src="./app.js"></script>
+
+  <!-- <script>
+  $(function(){
+    $('.carousel').carousel({
+      interval: 2000
+    })
+  })
+</script> -->
+</body>
+
+</html>

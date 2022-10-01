@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OLX</title>
+  <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./post.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row pt-4">
+      <div class="col-12 text-center">
+        <h5 class="font-weight-bold">POST YOUR AD</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <table class="table table-bordered" style="color:#002f34">
+
+          <tbody>
+            <tr>
+              <td>
+                <div>
+                  <h5 class="font-weight-bold my-2">ADD SOME DETAILS</h5>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1 " class="pb-0 mb-0">Ad title</label>
+                  <input type="text" class="form-control form-control-lg" id="addTitle">
+                </div>
+                <div class="form-group">
+                  <label for="description" class="pb-0 mb-0">Description</label>
+                  <textarea class="form-control" id="description" rows="3"></textarea>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <h5 class="font-weight-bold my-2">SET A PRICE</h5>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1 " class="pb-0 mb-0">Price</label>
+                  <input type="text" class="form-control form-control-lg" id="price">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <h5 class="font-weight-bold my-2">UPLOAD PHOTOS</h5>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1 " class="pb-0 mb-0">Main Image URL https://</label>
+                  <input type="text" class="form-control form-control-lg" id="mainImg">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1 " class="pb-0 mb-0">Small Image URL https://</label>
+                  <input type="text" class="form-control form-control-lg" id="img1">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1 " class="pb-0 mb-0">Small Image URL https://</label>
+                  <input type="text" class="form-control form-control-lg" id="img2">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="row">
+                  <div class="col-12 col-xl-2">
+
+                  <button type="submit" class="btn btn-block postNow-btn font-weight-bold" onclick="postNow()">Post Now</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="back-div" onclick="topFunction()" id="myBtn">
+    <button class="back-to-top"> <i class="fa fa-angle-up"></i> </button>
+ </div>
+
+  <script src="./app.js"></script>
+
+</body>
+
+</html>

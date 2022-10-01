@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./signup.css">
+
+
+</head>
+<body>
+    <!-- <br>
+  <br>
+  <br>
+  <div class="center">
+    <form onsubmit="login(); return false;">
+      <fieldset>
+        <legend>LogIn</legend>
+        <label for="LiEmail"> Email</label> <br><input type="email" name="email" id="LiEmail" placeholder="Email"><br><br>
+        <label for="LiPassword"> Password </label> <br><input type="password" name="password" id="LiPassword" placeholder="password"><br><br>
+        <button type="submit" >LogIn</button>
+      </fieldset>
+    </form>
+  </div> -->
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-around py-5" >
+      <div class=" main col-11 col-sm-10 col-md-6 col-lg-4 mt-5">
+        <form style="height:100% ;" onsubmit="login(); return false;">
+          <fieldset>
+            <legend>
+              <h1 class="text-break text-center mb-4 mt-2">Sign In</h1>
+            </legend>
+            <div class="form-group">
+              <label for="LiEmail">Email address</label>
+              <input type="email" class="form-control form-control-sm" id="LiEmail" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-light">We'll never share your email with anyone
+                else.</small>
+            </div>
+            <div class="username form-group">
+              <label for="LiPassword">Password</label>
+              <input type="password" class="form-control form-control-sm" id="LiPassword" placeholder="Password">
+              <!-- <small id="emailHelp" class="form-text text-light">Password </small> -->
+            </div>
+            <!-- <div class="username form-group">
+              <label for="exampleInputPassword1">Confirm Password</label>
+              <input type="password" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="Confirm Password">
+            </div> -->
+            <div class="d-flex justify-content-between pt-3">
+              <a href="./signup.html" class="btn btn-info">Create Account</a>
+              <button type="submit" class="btn btn-primary">SIGN IN</button>
+             
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./app.js"></script>
+
+</body>
+</html>
